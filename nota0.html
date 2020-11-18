@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        "Tu ordenador no es tuyo": Apple es acusada de violar nuestra privacidad, pero otros análisis y la propia Apple lo niegan
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">Tech News</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="celulares.html"> Celulares</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="robotica.html"> Robotica </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="videojuegos.html "> Videojuegos </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <div class="d-flex justify-content-center">
+        <h1>
+            <p class="h1">
+                Tech News
+            </p>
+        </h1>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h1>
+            "Tu ordenador no es tuyo": Apple es acusada de violar nuestra privacidad, pero otros análisis y la propia Apple lo niegan
+        </h1>
+
+        <p>
+            Este fin de semana los usuarios de ordenadores de Apple experimentaron problemas con la actualización a macOS 11.0 Big Sur, la última versión de este sistema operativo que por fin está disponible. Ciertas aplicaciones no respondían y no se ejecutaban
+            si estos ordenadores estaban conectados a internet. Eso hizo que un experto en ciberseguridad detectara algo singular gracias a esas caídas: Apple, que siempre ha presumido de respetar la privacidad de los usuarios, estaba según él recolectando
+            un buen conjunto de datos de sus sesiones en sus Mac. ¿Para qué lo hace? La polémica está servida, pero análisis adicionales de otros expertos lo niegan y Apple también ha aclarado la situación.
+        </p>
+        <p>
+            Jeffrey Paul, investigador de ciberseguridad, publicaba un análisis en el que explicaba cómo esos problemas con macOS estaban muy extendidos y comentados entre la comunidad de usuarios, y reveló que "resulta que en la actual versión de macOS, el sistema
+            operativo le manda a Apple un hash (identificador único) de todos y cada uno los programas que ejecutas cuando los ejecutas".
+        </p>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://i.blogs.es/6f5be3/privacy1/1366_2000.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <p>
+            Los datos recolectados son la fecha, hora, modelo de ordenador, proveedor de servicios de internet, ciudad, estado y hash de aplicación. Según este investigador, eso significa que "Apple sabe cuándo estás en casa, cuándo estás en el trabajo. Qué aplicaciones
+            abres y con qué frecuencia". En realidad Apple lleva haciendo algo similar desde macOS Catalina, publicado en octubre de 2019, y algunos aseguran que de hecho recolecta estos datos desde la versión anterior, Mojave, que apareció en septiembre
+            de 2018.
+        </p>
+        <p>
+            El problema no solo era ese. Esa información está desprotegida, así que cualquiera que analice el tráfico de red puede extraer también esa información, y Paul indicaba además que Apple forma parte del programa de espionaje PRISM de los Estados Unidos
+            desde 2012, y eso permite que esa información recolectada acabe siendo analizada por las agencias de inteligencia estadounidenses. Hasta ahora los usuarios de Apple podían evitar esa recolección de datos con una aplicación llamada Little Snitch,
+            pero las nuevas APIs de macOS Big Sur impiden que Little Snitch haga su función. De hecho la nueva herramienta o "demonio de sistema", trustd, se salta incluso las VPNs que puedan usar los usuarios: no hay forma de impedir que esa información
+            recolectada acabe donde Apple quiere que acabe.
+        </p>
+
+        <p>
+            Esos nuevos ordenadores de Apple, destacaba, ya no son "tuyos" aunque los compres, porque solo pueden ejecutar macOS y no dejan instalar de forma nativa otro sistema operativo. "Son las primeras máquinas de propósito general de la historia en las que
+            tendrás que hacer una elección exclusiva: o tienes una máquina rápida y eficiente, o tienes una privada. Tu ordenador ahora sirve a un amo remoto". Este investigador de seguridad compara la situación de los nuevos y futuros Mac basados en
+            los chips M1 de Apple (y sus versiones posteriores) con la que se vive en los dispositivos iOS. "En otros sistemas ARM de Apple (iPad, iPhone, Apple TV, Watch) está criptográficamente prohibido deshabilitar partes del sistema operativo", y
+            puede que ocurra lo mismo en estos nuevos Mac, algo que podremos saber en los próximos días o semanas. Paul sospecha que la explicación más simple para este tipo de recolección de datos es que "forma parte de los esfuerzos de Apple para evitar
+            el malware y garantizar la seguridad de la plataforma en macOS". El problema es que este tipo de tráfico, llamado OCSP (Online Certificate Status Protocol) no está cifrado y lo hace perfecto para ser vigilado por agencias de inteligencia.
+            "El efecto colateral es que esto funciona como telemetría, sin importar cuál es o era el objetivo original de OCSP".
+        </p>
+
+        <p>
+            Un segundo análisis de otro experto en ciberseguridad, Jacopo Jannone, trataba de ver las cosas con otra perspectiva. Como él explicaba, OCSP es un sistema que evalúa la validez de un certificado y que se usa en la conocida aplicación Gatekeeper que trata
+            de mantener los Mac seguros. Este proceso, llamado notaría o notarización, es ya un viejo conocido del funcionamiento de macOS a la hora de garantizar la seguridad de nuestro sistema.
+        </p>
+
+        <p>
+            Esa medida de seguridad es importante a la hora de evitar que software malicioso pueda ser ejecutado en los Mac. Mediante OCSP se comprueba si el identificador de desarrollador del certificado ha sido revocado si por ejemplo el software se ha visto comprometido
+            o si un certificado de desarrollador se ha usado para "firmar" aplicaciones maliciosas.
+        </p>
+
+        <p>
+            El funcionamiento del sistema es relativamente sencillo: cada vez que ejecutamos una aplicación, esta comprueba si el certificado que asegura que es una aplicación legítima y segura es válido. Para ello debe conectarse a los servidores de Apple, y aquó
+            Jannone explicaba que el hecho de que esa petición se realice a través de texto plano HTTP sin cifrar es una buena decisión, porque evita complejidad en el proceso y también posibles bucles infinitos. Además de eso, en ese análisis trataba
+            de analizar si realmente se podían identificar las aplicaciones que ejecutábamos con este sistema. Al analizar un ejemplo con la popular aplicación Wireshark para análisis de tráfico de red, lanzó una instancia de Firefox y comprobó qué información
+            se pasaba al servidor OCSP de Apple. Esos datos eran un comando GET con una cadena de 80 bytes que al ser descifrada mostraba su contenido. Como indicaba este investigador, "está claro que el servicio trustd en macOS no envía un hash de las
+            aplicaciones que lanzas. En lugar de eso, simplemente envía información sobre cierto certificado, como esperaríamos si tenemos en cuenta lo que hace OCSP de forma nativa". Aún así, apuntaba este investigador, sería posible crear tablas que
+            asocian cada una de estas cadenas con la aplicación correspondiente.
+        </p>
+
+    </div>
+
+    <hr>
+
+</body>
+
+</html>

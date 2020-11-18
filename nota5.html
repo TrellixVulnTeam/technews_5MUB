@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        De "nanana" a tu canción favorita: así funciona la inteligencia artificial de Google que encuentra canciones con solo tararearlas
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">Tech News</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="celulares.html"> Celulares</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="robotica.html"> Robotica </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="videojuegos.html "> Videojuegos </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <div class="d-flex justify-content-center">
+        <h1>
+            <p class="h1">
+                Tech News
+            </p>
+        </h1>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h1>
+            De "nanana" a tu canción favorita: así funciona la inteligencia artificial de Google que encuentra canciones con solo tararearlas
+        </h1>
+
+        <p>
+            Una de las funciones más curiosas que Google ha lanzado recientemente es "Hum to search", que podemos traducir literalmente como "tararear para buscar". En pocas palabras, esta función es capaz de encontrar esa canción que tenemos incrustada en la cabeza
+            y que no dejamos de cantar, pero cuyo título no recordamos, tarareándola. Funciona sorprendentemente bien y, aunque parezca arte de magia, lo cierto es que es una inteligencia artificial la que se encarga de darle vida.
+        </p>
+        <p>
+            No es algo estrictamente nuevo per se, si nos paramos a pensarlo. Aplicaciones como SoundHound ya contaban con esta función desde hace tiempo. Google también permitía encontrar el título de una canción en Search o usando la función Now Playing de los
+            Google Pixel, pero ambas requerían que sonase la música original, que puede distar (y mucho) del audio tarareado por una persona que no recuerda bien la letra. ¿Cómo funciona? Vamos a verlo.
+        </p>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://i.blogs.es/f97268/hum-oto-search/1366_2000.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <p>
+            Una canción tiene instrumentos, letra, ritmo, tempo... un tarareo es más confuso. Puede que la persona no recuerde bien el ritmo, puede que tampoco sepa cuándo hacer énfasis en agudos o graves, o puede que simplemente no sepa tararear del todo bien. Para
+            solucionar este problema, el modelo de machine learning de Google se centra en la melodía.
+        </p>
+        <p>
+            Muchos modelos de reconocimiento musical funcionan de la siguiente forma: cogen una muestra de sonido, la convierten en un espectrograma y comparan con una base de datos. Esa muestra de sonido suele ser rica en información, algo que no sucede en los tarareos.
+            Para que nos hagamos una idea, en la imagen inferior tenemos el espectrograma de un tarareo y una grabación de estudio de 'Bella Ciao'. La diferencia es evidente.
+        </p>
+        <p>
+            Google tiene una base de datos de 50 millones de imágenes con aspecto similar (de 50 millones de canciones) y el modelo debe encontrar, usando la imagen de la izquierda, la que coincide con una de esas 50 millones. Por eso lo que hace es centrarse en
+            la "melodía dominante", de forma que tiene que ignorar las voces de fondo, los instrumentos, el timbre de la voz y todo el ruido intruso propio de grabar un audio con el móvil.
+        </p>
+
+        <p>
+            Para ello, Google modificó los modelos de reconocimiento de Now Playing y Sound Search, que ya llevan operativos un buen tiempo, y entrenó la red neuronal con pares (audio tarareado y audio grabado), generando así una incrustación para cada uno. Para
+            reconocer el tarareo, la red debe "producir incrustaciones para las cuales los pares de audio que contienen la misma melodía estén cerca el uno del otro". En la imagen inferior podemos ver cómo los resultados del procesamiento (los números
+            de abajo) del tarareo y del sonido original no coinciden, pero son bastante similares. A eso se refiere Google.
+        </p>
+        <p>
+            De esa forma se entrena a la red neuronal que, tras ser expuesta a estos pares millones y millones de veces, es capaz de generar una incrustación del tarareo similar a la de la grabación de referencia, es decir, la canción. Luego es solo cuestión de buscar
+            coincidencias en una base de datos y dar con el resultado. No es una tarea fácil, pero Google asegura que el sistema es capaz de encontrar cuatro de cada cinco canciones.
+        </p>
+    </div>
+
+</body>
+
+</html>

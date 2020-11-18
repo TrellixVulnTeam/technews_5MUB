@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+
+        De un garabato a una bestia fantástica: así funciona el nuevo experimento con inteligencia artificial de Google
+
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">Tech News</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="celulares.html"> Celulares</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="robotica.html"> Robotica </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="videojuegos.html "> Videojuegos </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <div class="d-flex justify-content-center">
+        <h1>
+            <p class="h1">
+                Tech News
+            </p>
+        </h1>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h1>
+            De un garabato a una bestia fantástica: así funciona el nuevo experimento con inteligencia artificial de Google
+
+        </h1>
+
+        <p>
+            Las GANs (o redes generativas antagónicas) permiten conseguir cosas realmente interesantes, como caras de personas que no existen, países increíblemente detallados a partir de trazos e incluso deepfakes. Su potencial es enorme y, según cómo se entrenen,
+            pueden servir para diferentes propósitos. Uno de los que propone Google es la creación de criaturas fantásticas para agilizar el proceso de creación de un videojuego, por ejemplo.
+        </p>
+        <p>
+            Nace así Chimera Painter, un modelo de machine learning entrenado para renderizar con texturas realistas una criatura dibujada por el usuario. El modelo es capaz de diferenciar elementos como las alas, las patas, los ojos o la boca a partir de los trazos
+            que hacemos con el pincel. No es solo teoría, sino que Google ha creado una demo online para que cualquier usuario juegue con ella y la ponga a prueba. Es gratuita y accesible desde este enlace.
+        </p>
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://i.blogs.es/1edbbe/bestia/1366_2000.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.blogs.es/10c115/par-de-inmagenes/1366_2000.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.blogs.es/c5854f/herramienta/1366_2000.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+            <p>
+                Para poner a prueba su modelo de machine learning Google lo ha usado para crear una serie de imágenes para un videojuego tipo 'Hearstone' o 'Magic', es decir, con cartas que contienen imágenes de las criaturas que se van a enfrentar entre sí. De esa forma,
+                Google ha intentado explicar de forma más visual cuál es el objetivo de Chimera Painter. No es una herramienta de diseño, sino un asistente que podría a optimizar el flujo de trabajo, afirma Google.
+            </p>
+
+            <p>
+                Para entrenar la GAN, Google ha usado un conjunto de 10.000 pares de imágenes de monstruos que, a su vez, habían sido generados usando modelos 3D en Unreal Engine. Cada una de estas imágenes tiene su propio mapa de segmentación que, tal y como podemos
+                ver en la imagen inferior, no deja de ser un mapa que ubica la posición de las piernas, los ojos, la cabeza, la boca, etc. Se entrenaron diferentes modelos y, finalmente, se implementó el de mejor rendimiento en Chimera Painter.
+            </p>
+
+            <p>
+                La demo gratuita incluye cuatro criaturas prediseñadas que podemos modificar a placer. También podemos borrarlas por completo y crear una desde el principio. Sea cual sea la opción que elijamos, siempre tendremos que usar el mismo procedimiento. A la
+                izquierda tenemos el panel de dibujo con diferentes pinceles para cada parte del cuerpo (cabeza, boca, orejas, nariz, torso...) y los diferentes tamaños de pincel. Simplemente hay que dibujar (intentando mantener cierta coherencia) y pulsar
+                en "Transform!.
+            </p>
+
+            <p>
+                Chimera Painter nos devolverá a los pocos segundos una imagen de lo que entiende que hemos querido dibujar. Los modelos prediseñados no está nada mal y bien podrían servir para ser usados en juego tipo 'Hearstone', aunque los que genera a través de nuestros
+                dibujos dependen mucho de la precisión del trazo. Funciona en el ordenador y en el móvil y seguramente desde el segundo sea más sencillo dibujar, ya que usaremos el dedo y no el ratón.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
